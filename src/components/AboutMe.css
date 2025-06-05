@@ -1,0 +1,137 @@
+.about-container {
+  margin-top: 5rem;
+  width: 100%;
+  max-width: 1600px;
+  max-height: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  gap: 2.5rem;
+  justify-content: flex-start;
+  align-items: flex-start;
+  box-sizing: border-box;
+}
+
+.left-section {
+  flex: 1 1 0;
+  min-width: 300px;
+  max-width: 750px;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+}
+
+.card, .follow-card {
+  background-color: white;
+  border-radius: 1.5rem;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.08);
+  padding: 2.5rem;
+  margin-bottom: 1.5rem;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.profile-img {
+  width: 5rem;
+  border-radius: 9999px;
+  border: 1px solid #d1d5db;
+  padding: 0.25rem;
+  background-color: white;
+  display: block;
+  margin-bottom: 1.5rem;
+}
+
+.section-heading h1 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 0.75rem;
+}
+
+.section-content p {
+  font-size: 1.1rem;
+  color: #374151;
+}
+
+.follow-title {
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.follow-text {
+  color: #374151;
+  font-size: 1.05rem;
+  margin-bottom: 1rem;
+}
+
+.social-links {
+  display: flex;
+  gap: 1.25rem;
+  margin-top: 0.5rem;
+}
+
+.social-icon {
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 0.5rem;
+  object-fit: cover;
+  transition: transform 0.2s, box-shadow 0.2s;
+  box-shadow: 0 2px 8px rgba(59,130,246,0.10);
+}
+
+.social-icon:hover {
+  transform: scale(1.1);
+  box-shadow: 0 4px 16px rgba(59,130,246,0.18);
+}
+
+.skills-companies-section {
+  width: 100%;
+  max-width: 1600px;
+  margin: 5rem auto 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+  box-sizing: border-box;
+}
+
+/* Responsive styles */
+@media (max-width: 1600px) {
+  .about-container,
+  .skills-companies-section {
+    max-width: 100%;
+    padding: 0 1rem;
+  }
+  .left-section {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 900px) {
+  .about-container {
+    flex-direction: column;
+    gap: 1.5rem;
+    padding: 0 0.5rem;
+  }
+  .left-section {
+    max-width: 100%;
+  }
+  .card, .follow-card {
+    padding: 1.2rem 0.7rem;
+    border-radius: 1rem;
+  }
+  .skills-companies-section {
+    padding: 0 0.5rem;
+    gap: 1.5rem;
+  }
+}
+
+@media (max-width: 700px) {
+  .about-container,
+  .skills-companies-section {
+    padding: 0 0.2rem;
+  }
+  .card, .follow-card {
+    padding: 1rem 0.5rem;
+    border-radius: 0.75rem;
+  }
+}

@@ -1,0 +1,249 @@
+.ae-container {
+  width: 100%;
+  max-width: 1600px;
+  margin: 0 auto;
+  padding: 2.5rem 1.5rem 0 1.5rem;
+  box-sizing: border-box;
+}
+
+.ae-top-section {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+@media (max-width: 1023px) {
+  .ae-top-section {
+    flex-direction: column;
+    gap: 2rem;
+  }
+}
+
+.ae-card {
+  background-color: #fff;
+  padding: 2.5rem 2rem;
+  border-radius: 18px;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.08);
+  flex: 1;
+  min-width: 320px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-bottom: 0;
+}
+
+.ae-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+.ae-header h1 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #22223b;
+  margin: 0;
+}
+
+.ae-link {
+  text-decoration: none;
+  color: #3b82f6;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+  font-size: 1rem;
+  transition: color 0.2s;
+}
+
+.ae-link:hover {
+  color: #1d4ed8;
+}
+
+.ae-description {
+  font-size: 1.1rem;
+  color: #333;
+  line-height: 1.7;
+  margin-bottom: 1.5rem;
+}
+
+.ae-button {
+  padding: 0.7rem 1.5rem;
+  border: 1.5px solid #bfcfff;
+  background: #fff;
+  color: #3b82f6;
+  font-weight: 600;
+  border-radius: 12px;
+  cursor: pointer;
+  font-size: 1.1rem;
+  transition: background 0.2s, color 0.2s;
+  box-shadow: none;
+  margin-bottom: 1.5rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.ae-button:hover {
+  background: #3b82f6;
+  color: #fff;
+}
+
+.ae-follow {
+  margin-top: 2rem;
+}
+
+.ae-follow-title {
+  font-size: 1.3rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.ae-follow-desc {
+  color: #555;
+  margin-bottom: 1rem;
+}
+
+.ae-social-icons {
+  display: flex;
+  gap: 1rem;
+  margin-top: 0.5rem;
+}
+
+.ae-social-icons img {
+  width: 40px;
+  height: 40px;
+  border-radius: 8px;
+  object-fit: cover;
+  transition: transform 0.3s, box-shadow 0.2s;
+  box-shadow: 0 2px 8px rgba(59,130,246,0.10);
+}
+
+.ae-social-icons img:hover {
+  transform: scale(1.1);
+  box-shadow: 0 4px 16px rgba(59,130,246,0.18);
+}
+
+.ae-exp-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.ae-exp-logo {
+  width: 60px;
+  height: 60px;
+  object-fit: contain;
+  border-radius: 8px;
+  background: #f3f4f6;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+}
+
+.ae-exp-info {
+  flex: 1;
+}
+
+.ae-exp-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: bold;
+}
+
+.ae-exp-company {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #22223b;
+}
+
+.ae-exp-date {
+  font-size: 1rem;
+  color: #6b7280;
+  font-weight: 600;
+}
+
+.ae-exp-role {
+  color: #6b7280;
+  font-weight: 600;
+  margin: 0.2rem 0 0.5rem 0;
+}
+
+.ae-exp-desc {
+  color: #374151;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+.ae-projects {
+  margin-top: 3.5rem;
+}
+
+.ae-project-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 2rem;
+  margin-top: 1.5rem;
+  background: #fff;
+  border-radius: 14px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.04);
+  padding: 1.5rem 1rem;
+}
+
+.ae-project-image {
+  width: 120px;
+  height: 60px;
+  object-fit: contain;
+  border-radius: 8px;
+  background: #f3f4f6;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+}
+
+.ae-project-info {
+  flex: 1;
+}
+
+.ae-project-info h2 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.ae-project-info p {
+  color: #555;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+@media (max-width: 1023px) {
+  .ae-top-section {
+    flex-direction: column;
+    gap: 2rem;
+  }
+  .ae-card {
+    min-width: unset;
+  }
+}
+
+@media (max-width: 700px) {
+  .ae-container {
+    padding: 1rem 0.2rem 0 0.2rem;
+  }
+  .ae-card {
+    padding: 1.2rem 0.7rem;
+  }
+  .ae-exp-item,
+  .ae-project-item {
+    flex-direction: column;
+    gap: 1rem;
+  }
+  .ae-project-image {
+    width: 100%;
+    height: 60px;
+  }
+  .ae-header h1 {
+    font-size: 1.3rem;
+  }
+}

@@ -3,9 +3,8 @@ import Certifications from "./Certifications";
 
 const Experience = () => {
   return (
-    <div className=" mt-10  min-h-screen">
+    <div className="experience-section">
       <Internships />
-      {/* Certifications */}
       <Certifications />
     </div>
   );

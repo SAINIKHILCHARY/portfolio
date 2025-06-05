@@ -1,16 +1,12 @@
-
 import AboutandExperience from "./components/AboutandExperience";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Layout from "./utils/Layout";
 import AboutMe from "./components/AboutMe";
 import Experience from "./components/Experience";
 
-
-
-
 const App = () => {
   return (
-    <div className="lg:p-36 p-5 lg:pt-10 ">
+    <div className="app-container">
       <Router>
         <Routes>
           <Route path="/" element={<Layout />}>
@@ -25,7 +21,7 @@ const App = () => {
 };
 
 export default App;
- 
+
 
 /* import React from "react";
 import ReactDOM from "react-dom";

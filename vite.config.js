@@ -5,7 +5,10 @@ export default defineConfig({
   plugins: [react()],
   base: '/',
   build: {
-    outDir: 'dist',
-    sourcemap: true
+    "buildCommand": "npm run build",
+    "outputDirectory": "dist",
+    "rewrites": [
+      { "source": "/(.*)", "destination": "/index.html" }
+    ]
   }
 });

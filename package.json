@@ -8,7 +8,7 @@
     "build": "vite build",
     "preview": "vite preview",
     "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
-    "clean-install": "rm -rf node_modules package-lock.json && npm install"
+    "clean-install": "Remove-Item -Recurse -Force node_modules && Remove-Item -Force package-lock.json && npm install"
   },
   "engines": {
     "node": "18.x"
@@ -26,6 +26,6 @@
     "eslint": "^8.57.1",
     "eslint-plugin-react": "^7.37.5",
     "postcss": "^8.5.4",
-    "vite": "^6.3.5"
+    "vite": "^5.4.19"
   }
 }

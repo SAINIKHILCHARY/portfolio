@@ -1,6 +1,6 @@
 {
   "name": "portfolio",
-  "vite": "^5.4.19",
+  "version": "1.0.0",
   "private": true,
   "type": "module",
   "scripts": {
@@ -8,7 +8,7 @@
     "build": "vite build",
     "preview": "vite preview",
     "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
-    "clean-install": "Remove-Item -Recurse -Force node_modules && Remove-Item -Force package-lock.json && npm install"
+    "clean-install": "rm -rf node_modules package-lock.json && npm install"
   },
   "engines": {
     "node": "18.x"

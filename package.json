@@ -8,7 +8,8 @@
     "build": "vite build",
     "preview": "vite preview",
     "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
-    "clean-install": "rm -rf node_modules package-lock.json && npm install"
+    "clean-install": "rm -rf node_modules package-lock.json && npm install",
+    "postinstall": "chmod +x ./node_modules/.bin/vite"
   },
   "engines": {
     "node": "18.x"

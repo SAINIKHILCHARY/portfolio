@@ -20,7 +20,8 @@ import Marquee from "react-fast-marquee";
 // import instaPost from "../assets/instaPic.png";
 // import { Link } from "react-router-dom";
 // import byteXL from "../assets/bytexl.jpeg";
-import "./Companies.css";
+import "./Compnies.css";
+import { FaReact, FaNodeJs, FaGithub, FaCss3, FaJava, FaHtml5, FaDatabase } from "react-icons/fa";
 
 const Comapnies = () => {
   return (

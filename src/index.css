@@ -1,6 +1,4 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+/* Removed Tailwind CSS directives */
 
 body {
   /* font-family: 'Open Sans', sans-serif; */

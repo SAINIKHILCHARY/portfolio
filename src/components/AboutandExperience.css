@@ -229,21 +229,42 @@
 
 @media (max-width: 700px) {
   .ae-container {
-    padding: 1rem 0.2rem 0 0.2rem;
+    padding: 1.5rem 1rem 0 1rem;
   }
   .ae-card {
-    padding: 1.2rem 0.7rem;
+    padding: 2rem 1.5rem;
   }
   .ae-exp-item,
   .ae-project-item {
     flex-direction: column;
+    align-items: flex-start;
     gap: 1rem;
   }
   .ae-project-image {
-    width: 100%;
-    height: 60px;
+    width: 100px;
+    height: auto;
   }
   .ae-header h1 {
-    font-size: 1.3rem;
+    font-size: 1.8rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .ae-container {
+    padding: 1rem 0.5rem 0 0.5rem;
+  }
+  .ae-card {
+    padding: 1.5rem 1rem;
+  }
+  .ae-header h1 {
+    font-size: 1.5rem;
+  }
+  .ae-social-icons img {
+    width: 35px;
+    height: 35px;
+  }
+  .ae-exp-logo {
+    width: 50px;
+    height: 50px;
   }
 }

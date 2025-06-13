@@ -1,6 +1,5 @@
 .footer-section {
   margin-top: 5rem;
-
   width: 100%;
 }
 
@@ -53,6 +52,7 @@
   font-weight: 700;
   font-size: 1.15rem;
   color: #22223b;
+  flex-shrink: 0;
 }
 
 .footer-input,
@@ -67,7 +67,6 @@
   outline: none;
   background: #fafbfc;
   transition: border 0.2s;
-  
 }
 
 .footer-input:focus,
@@ -173,27 +172,74 @@
   .footer-right {
     max-width: 100%;
     width: 100%;
+    padding: 2rem;
   }
 }
 
-@media (max-width: 700px) {
+@media (max-width: 768px) {
+  .footer-section {
+    margin-top: 3rem;
+  }
+  .footer-left,
+  .footer-right {
+    padding: 1.5rem 1.2rem;
+    border-radius: 1.25rem;
+  }
+  .footer-title {
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
+  }
+  .footer-form-row {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.8rem;
+  }
+  .footer-label {
+    width: auto;
+    font-size: 1.05rem;
+  }
+  .footer-input,
+  .footer-textarea {
+    padding: 0.9rem;
+    font-size: 1rem;
+  }
+  .footer-submit-btn {
+    padding: 0.7rem 1.8rem;
+    font-size: 1rem;
+  }
+  .footer-contact-row {
+    font-size: 1.05rem;
+    gap: 0.8rem;
+  }
+}
+
+@media (max-width: 480px) {
   .footer-section {
     margin-top: 2rem;
   }
   .footer-left,
   .footer-right {
-    padding: 1.2rem 0.7rem;
+    padding: 1rem;
     border-radius: 1rem;
   }
   .footer-title {
-    font-size: 1.3rem;
-    margin-bottom: 1.2rem;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
   }
   .footer-label {
-    width: 90px;
-    font-size: 1rem;
+    font-size: 0.95rem;
+  }
+  .footer-input,
+  .footer-textarea {
+    padding: 0.7rem;
+    font-size: 0.95rem;
+  }
+  .footer-submit-btn {
+    padding: 0.6rem 1.5rem;
+    font-size: 0.95rem;
   }
   .footer-contact-row {
-    font-size: 1rem;
+    font-size: 0.95rem;
+    gap: 0.6rem;
   }
 }

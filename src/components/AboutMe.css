@@ -2,7 +2,6 @@
   margin-top: 5rem;
   width: 100%;
   max-width: 1600px;
-  max-height: 1200px;
   margin-left: auto;
   margin-right: auto;
   display: flex;
@@ -10,6 +9,7 @@
   justify-content: flex-start;
   align-items: flex-start;
   box-sizing: border-box;
+  padding: 0 1.5rem;
 }
 
 .left-section {
@@ -33,10 +33,12 @@
 
 .profile-img {
   width: 5rem;
+  height: 5rem;
   border-radius: 9999px;
   border: 1px solid #d1d5db;
   padding: 0.25rem;
   background-color: white;
+  object-fit: cover;
   display: block;
   margin-bottom: 1.5rem;
 }
@@ -92,46 +94,152 @@
   flex-direction: column;
   gap: 2.5rem;
   box-sizing: border-box;
+  padding: 0 1.5rem;
 }
 
 /* Responsive styles */
-@media (max-width: 1600px) {
+
+/* Adjustments for screens up to 1200px (desktops/large laptops) */
+@media (max-width: 1200px) {
   .about-container,
   .skills-companies-section {
-    max-width: 100%;
     padding: 0 1rem;
-  }
-  .left-section {
-    max-width: 100%;
   }
 }
 
+/* Tablets and smaller laptops (up to 900px) */
 @media (max-width: 900px) {
   .about-container {
     flex-direction: column;
     gap: 1.5rem;
-    padding: 0 0.5rem;
+    margin-top: 3rem;
+    padding: 0 1rem;
   }
+
   .left-section {
+    min-width: unset;
     max-width: 100%;
   }
+
   .card, .follow-card {
-    padding: 1.2rem 0.7rem;
-    border-radius: 1rem;
+    padding: 1.8rem 1.2rem;
+    border-radius: 1.25rem;
   }
+
+  .profile-img {
+    width: 4.5rem;
+    height: 4.5rem;
+  }
+
+  .section-heading h1 {
+    font-size: 1.4rem;
+  }
+
+  .section-content p {
+    font-size: 1rem;
+  }
+
+  .follow-title {
+    font-size: 1.15rem;
+  }
+
+  .follow-text {
+    font-size: 0.95rem;
+  }
+
+  .social-icon {
+    width: 2.25rem;
+    height: 2.25rem;
+  }
+
   .skills-companies-section {
-    padding: 0 0.5rem;
+    margin-top: 3rem;
     gap: 1.5rem;
+    padding: 0 1rem;
   }
 }
 
+/* Larger mobile devices (up to 700px) */
 @media (max-width: 700px) {
   .about-container,
   .skills-companies-section {
-    padding: 0 0.2rem;
+    padding: 0 0.8rem;
   }
+
   .card, .follow-card {
-    padding: 1rem 0.5rem;
-    border-radius: 0.75rem;
+    padding: 1.5rem 1rem;
+    border-radius: 1rem;
+  }
+
+  .profile-img {
+    width: 4rem;
+    height: 4rem;
+  }
+
+  .section-heading h1 {
+    font-size: 1.3rem;
+  }
+
+  .section-content p {
+    font-size: 0.95rem;
+  }
+
+  .follow-title {
+    font-size: 1.1rem;
+  }
+
+  .follow-text {
+    font-size: 0.9rem;
+  }
+
+  .social-icon {
+    width: 2rem;
+    height: 2rem;
+  }
+}
+
+/* Small mobile devices (up to 480px) */
+@media (max-width: 480px) {
+  .about-container {
+    margin-top: 2rem;
+    padding: 0 0.5rem;
+    gap: 1rem;
+  }
+
+  .card, .follow-card {
+    padding: 1rem 0.8rem;
+    border-radius: 0.8rem;
+  }
+
+  .profile-img {
+    width: 3.5rem;
+    height: 3.5rem;
+  }
+
+  .section-heading h1 {
+    font-size: 1.2rem;
+  }
+
+  .section-content p {
+    font-size: 0.9rem;
+  }
+
+  .follow-title {
+    font-size: 1rem;
+  }
+
+  .follow-text {
+    font-size: 0.85rem;
+  }
+
+  .social-icon {
+    width: 1.8rem;
+    height: 1.8rem;
+  }
+
+  .skills-companies-section {
+    margin-top: 2rem;
+    gap: 1rem;
+    padding: 0 0.5rem;
   }
 }

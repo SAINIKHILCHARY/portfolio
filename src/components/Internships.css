@@ -1,8 +1,8 @@
 .internships-container {
   width: 100%;
-  max-width: 1600px;           /* Match header/card width */
-  margin: 5rem auto 0 auto;    /* Center horizontally */
-  padding: 1.25rem;
+  max-width: 1600px;
+  margin: 5rem auto 0 auto;
+  padding: 1.25rem; /* Default padding */
   box-sizing: border-box;
   background: #fafbfc;
 }
@@ -10,6 +10,7 @@
 .internships-header {
   display: flex;
   justify-content: space-between;
+  align-items: center; /* Align items vertically */
 }
 
 .internships-title {
@@ -23,9 +24,9 @@
   background-color: #fff;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
   border-radius: 1.25rem;
-  padding: 2rem 2.5rem 1.75rem 2.5rem;
+  padding: 2rem 2.5rem 1.75rem 2.5rem; /* Default padding */
   box-sizing: border-box;
-  max-width: 1600px;           /* Ensure card doesn't exceed container */
+  max-width: 1600px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -56,7 +57,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-right: 2rem;
+  flex-shrink: 0; /* Prevent shrinking */
 }
 
 .internship-details {
@@ -90,29 +91,70 @@
   margin: 0;
 }
 
+/* Responsive adjustments */
+
+/* Medium screens (up to 1200px) */
 @media screen and (max-width: 1200px) {
   .internships-container,
   .internships-content {
     max-width: 100%;
-    padding-left: 0.5rem;
-    padding-right: 0.5rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
   }
 }
 
+/* Tablets and larger mobiles (up to 767px) */
 @media screen and (max-width: 767px) {
   .internships-content {
-    padding: 1rem;
+    padding: 1.5rem;
+  }
+  .internships-title {
+    font-size: 1.8rem;
   }
   .internship-item {
     flex-direction: column;
     gap: 1rem;
-    padding: 1.25rem 0;
+    padding: 1.5rem 0;
+  }
+  .internship-logo-container {
+    width: 4.5rem;
+    height: 4.5rem;
+  }
+  .internship-company {
+    font-size: 1.2rem;
+  }
+  .internship-title {
+    font-size: 1rem;
   }
   .internship-desc {
     max-width: 100%;
+    font-size: 0.95rem;
+  }
+}
+
+/* Small mobile devices (up to 480px) */
+@media screen and (max-width: 480px) {
+  .internships-container {
+    padding: 1rem;
+  }
+  .internships-content {
+    padding: 1rem;
+    border-radius: 1rem;
+  }
+  .internships-title {
+    font-size: 1.5rem;
   }
   .internship-logo-container {
-    margin-right: 0;
-    margin-bottom: 1rem;
+    width: 4rem;
+    height: 4rem;
+  }
+  .internship-company {
+    font-size: 1.1rem;
+  }
+  .internship-title {
+    font-size: 0.9rem;
+  }
+  .internship-desc {
+    font-size: 0.9rem;
   }
 }

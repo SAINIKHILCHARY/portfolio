@@ -34,7 +34,7 @@ const Header = () => {
             Madupu Sai Nikhil
           </h1>
           <h1 className="header-role">
-            I&apos;m a Full Stack Developer based in India
+            I&apos;m a Full Stack Developer 
           </h1>
           <div className="header-skills-section">
             <div className="header-skill-group">

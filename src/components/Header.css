@@ -14,7 +14,7 @@
   height: 220px;
   position: relative;
   background: #f0f4f8;
-  overflow: hidden;
+  overflow: visible;
 }
 
 .header-bg-image {

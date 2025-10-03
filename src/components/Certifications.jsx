@@ -21,7 +21,7 @@ const Certifications = () => {
           </div>
           <div className="certification-details">
             <Link
-              to="https://trainings.internshala.com/s/v/2105648/342ced0b"
+              to="https://drive.google.com/file/d/1YLxrzEyBcV4JE2RV2LZX6SNEPjZCOZd0/view?usp=sharing"
               className="certification-link"
             >
               {certificate.certificateName}
